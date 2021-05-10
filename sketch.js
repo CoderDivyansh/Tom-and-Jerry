@@ -31,7 +31,8 @@ function draw() {
 
     background(gardenImage);
     //Write condition here to evalute if tom and jerry collide
-    if (tom.x+100-jerry.x<tom.width/2+jerry.width/2)  {
+    if (tom.x+100-jerry.x<tom.width/2-jerry.width/2)  {
+        tom.x = 350
         console.log("collided")
         tom.velocityX = 0
         tom.addAnimation("catcollided",tomAnimation)
